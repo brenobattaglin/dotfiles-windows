@@ -35,6 +35,7 @@ cinst adb `
     docker-compose `
     docker-desktop `
     flutter `
+    intellijidea-community `
     jdk8 `
     microsoft-windows-terminal `
     git `
