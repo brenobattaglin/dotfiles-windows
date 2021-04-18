@@ -2,5 +2,5 @@
 
 (WIP) My dotfiles for Windows based on [Jay Harris's dotfiles for Windows](https://github.com/jayharris/dotfiles-windows)
 
-## Requirements
-- Powershell 4.0
+### Before running any of the scripts, for security reasons, you must run this command first:
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass;
