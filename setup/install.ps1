@@ -1,9 +1,12 @@
 #Requires -RunAsAdministrator
 
-# Install Chocolatey
+## Install Chocolatey
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+## Enable global confirmation, avoid prompts
+choco feature enable -n=allowGlobalConfirmation
 
 ## Install softwares via Chocolatey
 # Productivity
@@ -11,9 +14,8 @@ cinst 7zip `
     authy-desktop `
     bitwarden `
     bulkrenameutility `
+    freefilesync `
     powertoys `
-    rclone `
-    synctrayzor `
     sumatrapdf `
     telegram `
     transmission
@@ -32,10 +34,9 @@ cinst digikam `
 cinst adb `
     android-sdk `
     androidstudio `
-    docker-compose `
     docker-desktop `
+    docker-compose `
     flutter `
-    intellijidea-community `
     jdk8 `
     microsoft-windows-terminal `
     git `
