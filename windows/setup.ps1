@@ -1,4 +1,6 @@
-## Uninstall buil-in apps
+#Requires -RunAsAdministrator
+
+## Uninstall Windows buil-in apps
 
 ## Uninstall 3D Builder:
 Get-AppxPackage *3dbuilder* | Remove-AppxPackage
