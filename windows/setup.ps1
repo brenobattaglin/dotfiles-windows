@@ -1,6 +1,11 @@
 #Requires -RunAsAdministrator
 
-## Uninstall Windows buil-in apps
+## Enable UAC level but disable the dimmed background
+reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 1 /f
+reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v PromptOnSecureDesktop /t REG_DWORD /d 0 /f
+
+## --------------------------------------
+## Uninstall Windows built-in apps
 
 ## Uninstall 3D Builder:
 Get-AppxPackage *3dbuilder* | Remove-AppxPackage
