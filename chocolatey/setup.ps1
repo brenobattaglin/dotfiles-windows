@@ -13,10 +13,12 @@ epicgameslauncher `
 flutter `
 freefilesync `
 gimp `
+goggalaxy `
 git `
 logitechgaming `
 malwarebytes `
 mpc-be `
+origin `
 powertoys `
 qbittorrent `
 rufus 
