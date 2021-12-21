@@ -18,6 +18,7 @@ git `
 logitechgaming `
 malwarebytes `
 mpc-be `
+nodejs `
 origin `
 powertoys `
 qbittorrent `
