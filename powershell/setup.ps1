@@ -1,0 +1,1 @@
+Add-Content $profile "oh-my-posh --init --shell pwsh --config ~//AppData/Local/Programs/oh-my-posh/themes/agnoster.omp.json | Invoke-Expression"
