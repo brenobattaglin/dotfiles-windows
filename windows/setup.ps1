@@ -1,6 +1,6 @@
 #Requires -RunAsAdministrator
 
-## Enable UAC level but disable the dimmed background
+## Enable UAC level but disables the dimmed background
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 1 /f
 reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v PromptOnSecureDesktop /t REG_DWORD /d 0 /f
 
@@ -54,9 +54,6 @@ Get-AppxPackage *windowsphone* | Remove-AppxPackage
 
 ## Uninstall Your Phone
 Get-AppxPackage yourphone* | Remove-AppxPackage
-
-## Uninstall Photos:
-Get-AppxPackage *photos* | Remove-AppxPackage
 
 ## Uninstall Sports:
 Get-AppxPackage *bingsports* | Remove-AppxPackage
