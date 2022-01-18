@@ -7,8 +7,10 @@
     {
         "defaults":
         {
+            "fontFace": "FiraMono NF",
             "fontSize": 10,
-            "colorScheme" : "Nord"
+            "colorScheme" : "Nord",
+            "startingDirectory" : "B:\\Developer"
         },
         "list":
         [
@@ -38,7 +40,13 @@
                 "commandline": "%PROGRAMFILES%\\Git\\bin\\bash.exe",
                 "icon": "%PROGRAMFILES%\\Git\\mingw64\\share\\git\\git-for-windows.ico",
                 "startingDirectory" : "D:\\Dev"
-             }
+             },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            }
         ]
     },
 
