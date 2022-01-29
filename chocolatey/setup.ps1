@@ -28,6 +28,7 @@ $packages = @(
  'rufu'
  'spotify'
  'steam'
+ 'translucenttb'
 )
 
 ## Install Chocolatey packages
